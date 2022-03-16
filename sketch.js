@@ -44,6 +44,8 @@ function setup() {
 
 	nextHint()
 
+	noCursor()
+
 }
 
 
@@ -68,7 +70,7 @@ function draw() {
 			// GO
 			background(0,pulse,0)
 			// est-ce qu'on a fini de jouer?
-			if (!song.isPlaying()) {
+			if (song.currentTime() >= song.duration() - 0.1) {
 				discoEnd()
 				// changer l'état à OFF
 				state = 0
