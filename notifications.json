@@ -1,0 +1,39 @@
+{
+    "notifications":
+    [
+
+
+
+        {
+            "title": "Charles Mingus",
+            "filename": "mingus.mp3",
+            "code": "enia",
+            "hint": "La lettre E\nSuivi par N\nLettre I\nA à la fin",
+            "sound": {}
+        },
+
+
+
+        {
+            "title": "Thelonius Monk",
+            "filename": "monk.mp3",
+            "code": "nari",
+            "hint": "J'ai bien aimé les NARI dans ce film",
+            "sound": {}
+        },
+
+
+
+        {
+            "title": "Charlie XCX",
+            "filename": "iloveit.mp3",
+            "code": "fori",
+            "hint": "Cette fête est FORI",
+            "sound": {}
+        }
+
+
+
+
+    ]
+}

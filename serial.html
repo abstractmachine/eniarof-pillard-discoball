@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Serial Example</title>
+</head>
+
+<body>
+
+  <div id="permission">
+    <button id="serial">Connect To Serial Port</button>
+    <button id="A">A Button</button>
+    <button id="B">B Button</button>
+  </div>
+
+  <script>
+    
+    let writer
+
+	document.getElementById("serial").onclick = async () => {
+		port = await navigator.serial.requestPort()
+		await port.open({ baudRate:9600 })
+		writer = port.writable.getWriter()
+		console.log(writer)
+		//const ports = await navigator.serial.getPorts()
+	}
+
+    document.getElementById("A").onclick = async () => {
+        let data = new Uint8Array([66])
+        writer.write(data)
+    }
+
+    document.getElementById("B").onclick = async () => {
+        let data = new Uint8Array([66])
+        writer.write(data)
+    }
+
+  </script>
+
+</body>
+</html>
