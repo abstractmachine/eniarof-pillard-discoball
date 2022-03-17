@@ -3,34 +3,67 @@
     [
 
 
-
         {
-            "title": "Charles Mingus",
-            "filename": "mingus.mp3",
-            "code": "enia",
-            "hint": "La lettre E\nSuivi par N\nLettre I\nA à la fin",
+        "title": "Bande organisée",
+            "filename": "bandeorganise.mp3",
+            "code": "aine",
+            "hint": " rhita: Grosse soirée disco chez taum ce soir vous venez ?\n FNAC : Michel Petrucciani : tous les produits\nMaman : Tu as pensé à passer l'aspirateur ?\nFLASH HOROSCOPE : Poisson, il va y avoir de l'électricité dans l'air",
             "sound": {}
         },
 
 
+
+        {
+            "title": "Sweet Dreams",
+            "filename": "sweetdreams.mp3",
+            "code": "nari",
+            "hint": " BRICORAMA : -50% pour les revêtements de sol\n ZARA : Nouvelle collection manteaux pour l'hiver\n GIBERT JOSEPH : Alerte disponibilité \"Blonde\"\n Flore : T'as révisé le DM de maths ??\n",
+            "sound": {}
+
+        },
+
+        {
+            "title": "Temperature",
+            "filename": "temperature",
+            "code": "froa",
+            "hint": "PETIT BAMBOU : Permettez vous d'être tête en l'air\n LEBONCOIN : De nouveau résultats chaises sont disponibles\n FLASH HOROSCOPE : Poisson : Il va y avoir de l'électricité dans l'air\n NETFLIX : \" Saturday night fever\" Maintenant disponible",
+            "sound":{}
+
+        },
 
         {
             "title": "Thelonius Monk",
             "filename": "monk.mp3",
-            "code": "nari",
-            "hint": "J'ai bien aimé les NARI dans ce film",
+            "code": "oiea",
+            "hint": " Natasha : tu viens à l'entraînement ce soir ?\n GIBERT JOSEPH : Tous les livres roses sont en promo\n L'EQUIPE : Un coureur du tour de France fait son départ alcoolisé \n Nicolas : T'as laissé tes clefs à coté de l'ardoise",
             "sound": {}
+
         },
 
+        {
+            "title": "Thelonius Monk",
+            "filename": "monk.mp3",
+            "code": "rofe",
+            "hint": " Théodore : Pense à étendre le linge stp\n DECATHLON : Promotion au rayon vélo -\n France5 : Silence ça pousse\n EDF : Mise à jour de votre contrat"
 
+        },
 
         {
-            "title": "Charlie XCX",
-            "filename": "iloveit.mp3",
-            "code": "fori",
-            "hint": "Cette fête est FORI",
-            "sound": {}
+            "title": "Thelonius Monk",
+            "filename": "monk.mp3",
+            "code": "eron",
+            "hint": " EDF : Mise à jour de votre contrat\n Voisine chiante : Le linge que vous avez suspendu est tombé sur mon balcon il faudra le récupérer.\n Deliveroo : Nouveauté : Poulpe grillé chez Nikki Sushi \n Maxime : Je me suis endormi par terre hier MDRRRRRR"
+
+        },
+
+        {
+            "title": "Thelonius Monk",
+            "filename": "monk.mp3",
+            "code": "ifrn",
+            "hint": " ARTE : Reportage sur la théorie de la relativité, son élaboration, contexte historique\n Jardiland : Nouveaux bacs à fleur décoratifs\n GIBERT JOSEPH : Alerte disponibilité \"Blonde\" \n WISH : NETTOYANT POUR SOLS -90%"
+
         }
+    
 
 
 

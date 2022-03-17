@@ -1,8 +1,10 @@
 
 // Variables
 
-let delay = 600
+let delay = 3000
 let countdown = delay
+let cooldownDelay = 400
+let cooldown = 0
 let data
 let notifications
 let title = "...."
@@ -91,15 +93,14 @@ function draw() {
 	}
 	
 	fill(255)
-	textSize(30)
+	textSize(24)
 	text(hint,width*0.5,height*0.25)
 	textSize(100)
 	text(guess,width*0.5,height*0.5)
 	text(title,width*0.5,height*0.75)
 
-	if (--countdown < 0) {
-		countdown = delay
-		nextHint()
+	if (--cooldown < 0) {
+		cooldown = 0
 	}
 
 }
@@ -117,6 +118,9 @@ function nextHint() {
 // lorsqu'on appuie sur une touche
 
 function keyPressed() {
+
+	// attendre
+	if (cooldown > 0) return
 	
 	// vérifier qu'il s'agit d'une touche entre a et z
 	if (key >= 'a' && key <= 'z') {
@@ -170,6 +174,8 @@ function validateCode() {
 			playSound(notifications[i].filename)
 			// dire au lightshow qu'on a reussi
 			discoYes()
+			// il faut attendre un peu
+			cooldown = cooldownDelay
 			// changer l'état à YES
 			state = 1
 			// afficher le titre
@@ -189,6 +195,7 @@ function validateCode() {
 
 
 function playSound(filename) {
+	console.log(filename)
 	song = new p5.SoundFile("musique/" + filename, soundLoaded)
 }
 
@@ -200,6 +207,9 @@ function soundLoaded() {
 	discoGo()
 	// changer l'état à GO!!!
 	state = 2
+	nextHint()
+
+	cooldown = cooldownDelay
 }
 
 
